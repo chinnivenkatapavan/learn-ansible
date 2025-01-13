@@ -1,9 +1,15 @@
 - name: Variables
   hosts: localhost
   connection: local
+  vars:
+    URL: play.google.com #global variable
   tasks:
-    - name: Print a variable
+    - name: Print a local variable
       vars:
-        URL: task.google.com
+        URL: task.google.com #local variable
       ansible.builtin.debug:
-        msg: Var URL - {{URL}}
+        msg: "Local var URL - {{ URL }}" #they are uses local variable
+
+    - name: Print a global variable
+      ansible.builtin.debug:
+        msg: "Global var URL - {{ URL }}" #they are uses global variable
