@@ -1,6 +1,5 @@
 - name: Demo
   hosts: all
   tasks:
-    -debug:
-      msg: "Hello guru"
-
+    - debug:
+        msg: "Hello guru"
