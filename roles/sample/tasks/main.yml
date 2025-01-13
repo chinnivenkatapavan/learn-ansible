@@ -1,0 +1,3 @@
+- name: Print a global variable
+  ansible.builtin.debug:
+    msg: "Global var URL - {{ URL }}" #they are uses global variable
