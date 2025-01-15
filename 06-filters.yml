@@ -1,0 +1,7 @@
+- name: Filters
+  hosts: localhost
+  connection: local
+  vars:
+    URL: curl -o /tmp/frontend.zip https://roboshop-artifacts.s3.amazonaws.com/frontend-v3.zip
+  tasks:
+    msg: "{{ URL | split('/) }}"
