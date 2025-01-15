@@ -20,5 +20,9 @@
 # KEY: {{ Val }}, then ansible expects it to be in double quotes, Line 15 - quotes needed
 
 # Variable Precedence - If same variable name is declared in multiple, which one will be picked by Ansible.
-# . Task Variable
-# . Play variable
+# 1. command line variable
+# 2. Task Variable
+# 3. Play level variable from file
+# 4. Play level variable
+# 5. Role variables
+# 6. Role default variable
