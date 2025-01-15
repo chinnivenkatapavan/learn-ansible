@@ -26,3 +26,17 @@
 # 4. Play level variable
 # 5. Role variables
 # 6. Role default variable
+
+# Var: Value
+# Variable can have a-z, 0-9, _,
+
+# VAR - TYPE
+# Three Types
+# Plain Variable - num: 10
+# List Variable - num: [10,20]
+# Map Variable - num: {a:10,b:20}
+
+# Var -Data TYPES
+# String
+# Number
+# Boolean - True, False, Yes, No ( First letter can be CAPITAL or small)
