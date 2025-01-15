@@ -1,0 +1,14 @@
+- name: Loops
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: print fruits
+      ansible.builtin.debug:
+        msg: Fruit Name - {{ iteam }} #item is default value which is provided by ansible
+      loop:
+        - apple
+        - banana
+        - orange
+
+
+#
