@@ -11,7 +11,7 @@
         - orange
     - name: print fruits with quantity
       ansible.builtin.debug:
-        msg: Fruit Name - {{ items.name }}, Quantity - {{ item.quantity }} #item is default value which is provided by ansible
+        msg: Fruit Name - {{ item.name }}, Quantity - {{ item.quantity }} #item is default value which is provided by ansible
       loop:
         - { name: apple, quantity: 10 }
         - { name: banana, quantity: 110 }
