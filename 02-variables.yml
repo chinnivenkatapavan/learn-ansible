@@ -3,6 +3,8 @@
   connection: local
   vars:
     URL: play.google.com #global variable
+  vars_files:
+    - just-vars.yml
   tasks:
     - name: Print a local variable
       vars:
@@ -16,3 +18,7 @@
 
 ## KEY: val, Line 11 no quotes needed
 # KEY: {{ Val }}, then ansible expects it to be in double quotes, Line 15 - quotes needed
+
+# Variable Precedence - If same variable name is declared in multiple, which one will be picked by Ansible.
+# . Task Variable
+# . Play variable
