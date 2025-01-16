@@ -4,5 +4,7 @@
   vars:
     URL: https://roboshop-artifacts.s3.amazonaws.com/frontend-v3.zip
   tasks:
-      msg: "{{ URL | split('\') }}"
-      msg1: "{{ URL | last }}"
+    - name: Print
+      ansible.builtin.debug:
+        msg: "{{ URL | split('\') }}"
+        msg1: "{{ URL | last }}"
