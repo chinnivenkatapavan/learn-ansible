@@ -25,7 +25,8 @@
 # 3. Play level variable from file
 # 4. Play level variable
 # 5. Role variables
-# 6. Role default variable
+# 6. Inventory Variables
+# 7. Role default variable
 
 # Var: Value
 # Variable can have a-z, 0-9, _,
