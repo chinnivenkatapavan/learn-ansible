@@ -7,4 +7,3 @@
     - name: Print
       ansible.builtin.debug:
         msg: "{{ URL | split('\') }}"
-        msg1: "{{ URL | last }}"
