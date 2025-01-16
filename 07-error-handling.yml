@@ -4,6 +4,7 @@
   tasks:
     - name: Print
       ansible.builtin.shell: cat /etc/password | grep Demo
+      ignore_errors: true #ignore error and continue with nxt command
 
     - name: Print
       ansible.builtin.shell: ls
