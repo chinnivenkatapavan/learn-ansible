@@ -1,0 +1,10 @@
+# template is helps for replacing value in copy file
+
+- name: Template
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Copy file
+      ansible.builtin.template:
+        src: test.txt
+        dest: /tmp/test-copy.txt
