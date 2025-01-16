@@ -5,6 +5,5 @@
     URL: https://roboshop-artifacts.s3.amazonaws.com/frontend-v3.zip
   tasks:
     - name: Print
-      ansible.plugins.action.debug:
-        msg: "{{ URL | split('/') }}"
-        msg1: "{{ URL | last }}"
+      ansible.builtin.debug:
+        msg: "{{ URL | split('/') | last }}"
