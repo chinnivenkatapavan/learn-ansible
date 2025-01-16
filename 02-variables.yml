@@ -16,6 +16,14 @@
       ansible.builtin.debug:
         msg: "{{ URL }}" #they are uses global variable
 
+    # Storing var in other variable
+    - name: Task output
+      ansible.builtin.shell: ls
+      register: out
+    - name: Output
+      ansible.builtin.debug:
+        msg: "{{ out }}"
+
 ## KEY: val, Line 11 no quotes needed
 # KEY: {{ Val }}, then ansible expects it to be in double quotes, Line 15 - quotes needed
 
