@@ -4,4 +4,4 @@
   tasks:
     - name: print
       ansible.builtin.debug:
-        msg: "password - {{ lookup('community.hashi_vault.hashi_vault', 'secret=test/demo-ssh:password token={{ vault_token }} url=http://vault.azdevops2704.online:8200')  }}"
+        msg: "password - {{ lookup('community.hashi_vault.hashi_vault', 'secret=test/data/demo-ssh:password token={{ vault_token }} url=http://vault.azdevops2704.online:8200')  }}"
